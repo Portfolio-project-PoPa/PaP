@@ -1472,7 +1472,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3068719490159434690, guid: c83f4d9457ba0614a8c0b1570cc9d863, type: 3}
       propertyPath: m_StoppingDistance
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3068719490159434694, guid: c83f4d9457ba0614a8c0b1570cc9d863, type: 3}
       propertyPath: m_RootOrder
