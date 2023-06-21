@@ -789,6 +789,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 100006, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 100006, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
@@ -1466,6 +1470,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3068719490159434690, guid: c83f4d9457ba0614a8c0b1570cc9d863, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 1.2
+      objectReference: {fileID: 0}
     - target: {fileID: 3068719490159434694, guid: c83f4d9457ba0614a8c0b1570cc9d863, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1514,9 +1522,14 @@ PrefabInstance:
       propertyPath: _target
       value: 
       objectReference: {fileID: 970320335}
+    - target: {fileID: 3068719490159434695, guid: c83f4d9457ba0614a8c0b1570cc9d863, type: 3}
+      propertyPath: _chaseRange
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3068719490159434701, guid: c83f4d9457ba0614a8c0b1570cc9d863, type: 3}
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4087992311453044953, guid: c83f4d9457ba0614a8c0b1570cc9d863, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c83f4d9457ba0614a8c0b1570cc9d863, type: 3}
