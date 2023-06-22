@@ -47,7 +47,7 @@ public class EnemyAI : MonoBehaviour
 
     private void AttackTarget()
     {
-        Debug.Log("Ударил");
+        Debug.Log("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
     }
 
     private void ChaseTarget()
