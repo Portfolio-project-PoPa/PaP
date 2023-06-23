@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Shooter;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -13,6 +14,8 @@ public class Bullet : MonoBehaviour
     {
         _lifeTimer = lifeDuration;
     }
+
+    public int Damage { get; private set; } = 20;
 
     void Update()
     {
