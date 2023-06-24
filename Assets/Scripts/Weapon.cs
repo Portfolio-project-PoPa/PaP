@@ -8,6 +8,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] Camera _FPCamera;
     [SerializeField] float _range = 100f;
     [SerializeField] private float _damage = 20f;
+    [SerializeField] private ParticleSystem _muzzleEffect;
 
     void Update()
     {
@@ -19,18 +20,14 @@ public class Weapon : MonoBehaviour
 
     private void Shoot()
     {
-        if (Physics.Raycast(_FPCamera.transform.position, _FPCamera.transform.forward, out RaycastHit hit, _range))
-        {
-            if(hit.collider.TryGetComponent(out EnemyHealth target))
-            {
-                target.TakeDamage(_damage);
-            }
+        _muzzleEffect.Play();
 
-            Debug.Log(hit.collider.name);
-        }
-        else
-        {
+        if (Physics.Raycast(_FPCamera.transform.position, _FPCamera.transform.forward, out RaycastHit hit, _range) == false)
             return;
-        }
+
+        if (hit.collider.TryGetComponent(out EnemyHealth target))
+            target.TakeDamage(_damage);
+
+        Debug.Log(hit.collider.name);
     }
 }
