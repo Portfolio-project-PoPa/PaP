@@ -908,6 +908,14 @@ PrefabInstance:
       propertyPath: looping
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7590165213375869650, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959173817352838203, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: _hitEffect
+      value: 
+      objectReference: {fileID: 7000490191134810834, guid: 3662068e632b63d41bc6095e1382a6c2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
 --- !u!1001 &825348079
