@@ -29,7 +29,7 @@ public class Weapon : MonoBehaviour
 
     private void ProcessRaycast()
     {
-        if (Physics.Raycast(_FPCamera.transform.position, _FPCamera.transform.forward, out RaycastHit hit, _range) == false)
+        if (Physics.Raycast(_FPCamera.transform.position, _FPCamera.transform.forward, out RaycastHit hit, _range))
         {
             CreateHitImpact(hit);
 
