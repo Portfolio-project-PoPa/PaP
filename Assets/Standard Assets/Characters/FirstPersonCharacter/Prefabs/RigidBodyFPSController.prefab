@@ -317,7 +317,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _FPCamera: {fileID: 2000000}
-  _range: 0
+  _range: 100
+  _damage: 25
 --- !u!1 &4321338867431036281
 GameObject:
   m_ObjectHideFlags: 0

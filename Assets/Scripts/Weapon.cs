@@ -6,11 +6,12 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     [SerializeField] Camera _FPCamera;
-    [SerializeField] float _range;
+    [SerializeField] float _range = 100f;
+    [SerializeField] private float _damage = 20f;
 
     void Update()
     {
-        if(Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1"))
         {
             Shoot();
         }
@@ -18,7 +19,18 @@ public class Weapon : MonoBehaviour
 
     private void Shoot()
     {
-        Physics.Raycast(_FPCamera.transform.position, _FPCamera.transform.forward, out RaycastHit hit, _range);
-        Debug.Log(hit.collider.name);
+        if (Physics.Raycast(_FPCamera.transform.position, _FPCamera.transform.forward, out RaycastHit hit, _range))
+        {
+            if(hit.collider.TryGetComponent(out EnemyHealth target))
+            {
+                target.TakeDamage(_damage);
+            }
+
+            Debug.Log(hit.collider.name);
+        }
+        else
+        {
+            return;
+        }
     }
 }
