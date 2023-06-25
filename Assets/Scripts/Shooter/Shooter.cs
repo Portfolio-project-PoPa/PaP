@@ -40,11 +40,6 @@ namespace Shooter
 
         private void Shoot()
         {
-            if (_bulletPool.Count == 0)
-            {
-                CreateNewBullet();
-            }
-
             Bullet bullet = _bulletPool.Dequeue();
         
             Transform bulletTransform = bullet.transform;
