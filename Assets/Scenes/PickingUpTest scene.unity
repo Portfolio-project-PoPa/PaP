@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 66125857e89e8b04780ca5c38185037d, type: 2}
---- !u!1 &113901147 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100006, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
-  m_PrefabInstance: {fileID: 764654691}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &269473576
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -794,10 +789,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 100006, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
-    - target: {fileID: 100006, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
@@ -845,18 +836,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 11400006, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 13600000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 13400000, guid: cdc861616e4f69642b833b1f8fec915e, type: 2}
-    - target: {fileID: 7959173817352838203, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
-      propertyPath: _hitEffect
-      value: 
-      objectReference: {fileID: 7000490191134810834, guid: 3662068e632b63d41bc6095e1382a6c2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
 --- !u!1 &781215310
@@ -1073,19 +1052,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
   m_PrefabInstance: {fileID: 764654691}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &970320339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 113901147}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 098138f33ef09444f87f27d949d0467c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _mainCamera: {fileID: 1768691706}
 --- !u!1001 &1049976997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1476,11 +1442,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5862bbfe91a75054ca72c13b555b6ac5, type: 3}
   m_PrefabInstance: {fileID: 1641794202}
   m_PrefabAsset: {fileID: 0}
---- !u!20 &1768691706 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 2000000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
-  m_PrefabInstance: {fileID: 764654691}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1794471805
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1624,10 +1585,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3068719490159434690, guid: c83f4d9457ba0614a8c0b1570cc9d863, type: 3}
-      propertyPath: m_StoppingDistance
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 3068719490159434694, guid: c83f4d9457ba0614a8c0b1570cc9d863, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1676,14 +1633,9 @@ PrefabInstance:
       propertyPath: _target
       value: 
       objectReference: {fileID: 970320335}
-    - target: {fileID: 3068719490159434695, guid: c83f4d9457ba0614a8c0b1570cc9d863, type: 3}
-      propertyPath: _chaseRange
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 3068719490159434701, guid: c83f4d9457ba0614a8c0b1570cc9d863, type: 3}
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4087992311453044953, guid: c83f4d9457ba0614a8c0b1570cc9d863, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c83f4d9457ba0614a8c0b1570cc9d863, type: 3}
