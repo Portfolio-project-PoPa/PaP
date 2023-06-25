@@ -5,9 +5,9 @@ public class Health : MonoBehaviour
     [SerializeField] private int _value = 100;
     private int _maxValue = 100;
     
-    private void OnCollisionEnter(Collision damagingObject)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (damagingObject.collider.TryGetComponent(out Bullet bullet))
+        if (collision.collider.TryGetComponent(out Bullet bullet))
         {
             TakeDamage(bullet.Damage);
         }
