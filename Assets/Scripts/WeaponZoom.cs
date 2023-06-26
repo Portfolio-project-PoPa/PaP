@@ -1,18 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class WeaponZoom : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private float _zoomInFOV = 40f;
+    [SerializeField] private float _zoomOutFOV = 60f;
+
+    private Camera _mainCamera;
+
+    private void Start()
     {
-        
+        _mainCamera = Camera.main;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (Input.GetButton("Fire2"))
+        {
+            _mainCamera.fieldOfView = _zoomInFOV;
+        }
+        else
+        {
+            _mainCamera.fieldOfView = _zoomOutFOV;
+        }
     }
 }
