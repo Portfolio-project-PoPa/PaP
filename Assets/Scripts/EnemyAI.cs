@@ -43,6 +43,11 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    public void OnDamageTaken()
+    {
+        _isProvoked = true;
+    }
+
     private void AttackTarget()
     {
         if (_target.TryGetComponent(out PlayerHealth playerHealth))
