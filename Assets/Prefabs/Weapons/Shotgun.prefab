@@ -353,10 +353,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _FPCamera: {fileID: 0}
-  _range: 100
-  _damage: 25
-  _muzzleEffect: {fileID: 5828259666842273700}
-  _hitEffect: {fileID: 7000490191134810834, guid: 3662068e632b63d41bc6095e1382a6c2, type: 3}
+  _range: 2
+  _damage: 100
+  _shotDelay: 1
+  _muzzleFlash: {fileID: 5828259666842273700}
+  _hitImpact: {fileID: 7000490191134810834, guid: 3662068e632b63d41bc6095e1382a6c2, type: 3}
   _ammoSlot: {fileID: 0}
 --- !u!1 &2337074158997199752
 GameObject:

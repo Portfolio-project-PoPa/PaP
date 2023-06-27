@@ -448,6 +448,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pistol
       objectReference: {fileID: 0}
+    - target: {fileID: 3440151922447396655, guid: 08863083d5884b54e987aff66537af5d, type: 3}
+      propertyPath: _fpsController
+      value: 
+      objectReference: {fileID: 11400004}
     - target: {fileID: 6323940286505593165, guid: 08863083d5884b54e987aff66537af5d, type: 3}
       propertyPath: _FPCamera
       value: 
@@ -518,14 +522,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carbine
       objectReference: {fileID: 0}
-    - target: {fileID: 4712262678642561544, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
-      propertyPath: _zoomInFOV
-      value: 30
+    - target: {fileID: 2337074158997199750, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4712262678642561544, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
       propertyPath: _fpsController
       value: 
       objectReference: {fileID: 11400004}
+    - target: {fileID: 6323940286505593165, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+      propertyPath: _range
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 6323940286505593165, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
       propertyPath: _FPCamera
       value: 
@@ -595,6 +603,10 @@ PrefabInstance:
     - target: {fileID: 2337074158997199750, guid: c5b004733c5897946a3af54bb5108234, type: 3}
       propertyPath: m_Name
       value: Shotgun
+      objectReference: {fileID: 0}
+    - target: {fileID: 2337074158997199750, guid: c5b004733c5897946a3af54bb5108234, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6323940286505593165, guid: c5b004733c5897946a3af54bb5108234, type: 3}
       propertyPath: _FPCamera

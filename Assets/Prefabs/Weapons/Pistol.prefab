@@ -262,6 +262,7 @@ GameObject:
   - component: {fileID: 2337074159000356742}
   - component: {fileID: 2337074158999389510}
   - component: {fileID: 6323940286505593165}
+  - component: {fileID: 3440151922447396655}
   m_Layer: 0
   m_Name: Pistol
   m_TagString: Untagged
@@ -353,11 +354,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _FPCamera: {fileID: 0}
-  _range: 100
-  _damage: 25
-  _muzzleEffect: {fileID: 5828259666842273700}
-  _hitEffect: {fileID: 7000490191134810834, guid: 3662068e632b63d41bc6095e1382a6c2, type: 3}
+  _range: 10
+  _damage: 10
+  _shotDelay: 0.3
+  _muzzleFlash: {fileID: 5828259666842273700}
+  _hitImpact: {fileID: 7000490191134810834, guid: 3662068e632b63d41bc6095e1382a6c2, type: 3}
   _ammoSlot: {fileID: 0}
+--- !u!114 &3440151922447396655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2337074158997199750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a61f8eefbed726646ba1323750c4776e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fpsController: {fileID: 0}
+  _zoomInFOV: 40
+  _zoomOutFOV: 60
+  _zoomInSensitivity: 1
+  _zoomOutSensitivity: 2
 --- !u!1 &2337074158997199752
 GameObject:
   m_ObjectHideFlags: 0
