@@ -1275,14 +1275,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2000000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
-      propertyPath: field of view
-      value: 60
-      objectReference: {fileID: 0}
     - target: {fileID: 6131679398887590695, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: _gameOverCanvas
       value: 
       objectReference: {fileID: 748876984}
+    - target: {fileID: 7959173817352838203, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: _ammoSlot
+      value: 
+      objectReference: {fileID: 2045643331}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
 --- !u!1001 &825348079
@@ -2559,27 +2559,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2004843257}
   m_CullTransparentMesh: 1
---- !u!1 &2045643323 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100006, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+--- !u!114 &2045643331 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2045643331, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
   m_PrefabInstance: {fileID: 764654691}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2045643330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2045643323}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a61f8eefbed726646ba1323750c4776e, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e26e082292dd3b41b3b115614b20bb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _zoomInFOV: 40
-  _zoomOutFOV: 60
-  _zoomInSensitivity: 0.5
-  _zoomOutSensitivity: 2
 --- !u!1001 &3068719490925703962
 PrefabInstance:
   m_ObjectHideFlags: 0
