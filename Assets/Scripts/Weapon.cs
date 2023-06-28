@@ -12,6 +12,8 @@ public class Weapon : MonoBehaviour
     [SerializeField] private GameObject _hitImpact;
     [SerializeField] private Ammo _ammoSlot;
 
+    [SerializeField] private AmmoType _ammoType;
+
     private bool _canShoot = true;
 
     private void OnEnable()
@@ -31,11 +33,11 @@ public class Weapon : MonoBehaviour
     {
         _canShoot = false;
 
-        if (_ammoSlot.GetCurrentAmount() > 0)
+        if (_ammoSlot.GetCurrentAmount(_ammoType) > 0)
         {
             PlayMuzzleFlash();
             ProcessRaycast();
-            _ammoSlot.ReduceCurrentAmount();
+            _ammoSlot.ReduceCurrentAmount(_ammoType);
         }
 
         yield return new WaitForSeconds(_shotDelay);
