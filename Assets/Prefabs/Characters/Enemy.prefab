@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 3068719490159434690}
   - component: {fileID: 3068719490159434695}
   - component: {fileID: 5163352812972951878}
+  - component: {fileID: 6922138912481774341}
+  - component: {fileID: 7716264115294092252}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -92,7 +94,7 @@ CapsuleCollider:
   m_Radius: 0.25
   m_Height: 1.88976
   m_Direction: 1
-  m_Center: {x: 0, y: 0.95511997, z: 0}
+  m_Center: {x: 0, y: 0, z: 0.09}
 --- !u!195 &3068719490159434690
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -127,9 +129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e732e2703663449a32ba97b6d7b2e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _target: {fileID: 0}
   _chaseRange: 8
-  _damage: 0
+  _turnSpeed: 5
 --- !u!114 &5163352812972951878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,6 +144,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _healthPoints: 100
+--- !u!114 &6922138912481774341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3068719490159434701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d864b33d77317ca4b923379acf36b43d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 40
+--- !u!95 &7716264115294092252
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3068719490159434701}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: b20a3c10714a6ac439af479e3273de65, type: 3}
+  m_Controller: {fileID: 9100000, guid: e54a0b1cf0de1e140a942f7026c5587c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &5248227632048173176
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -164,7 +199,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4684931504687902, guid: cecba8cbb65991c42a1e7219f8210b9a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4684931504687902, guid: cecba8cbb65991c42a1e7219f8210b9a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -202,7 +237,8 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: e54a0b1cf0de1e140a942f7026c5587c, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 95365556103937686, guid: cecba8cbb65991c42a1e7219f8210b9a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cecba8cbb65991c42a1e7219f8210b9a, type: 3}
 --- !u!4 &5243834638131837798 stripped
 Transform:
