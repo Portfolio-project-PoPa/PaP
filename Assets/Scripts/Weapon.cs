@@ -3,15 +3,23 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    [SerializeField] Camera _FPCamera;
-    [SerializeField] float _range = 100f;
+    [SerializeField] private float _range = 100f;
     [SerializeField] private float _damage = 20f;
     [SerializeField] private float _shotDelay = 0.5f;
+
+    [SerializeField] private Camera _FPCamera;
     [SerializeField] private ParticleSystem _muzzleFlash;
     [SerializeField] private GameObject _hitImpact;
     [SerializeField] private Ammo _ammoSlot;
 
+    [SerializeField] private AmmoType _ammoType;
+
     private bool _canShoot = true;
+
+    private void OnEnable()
+    {
+        _canShoot = true;
+    }
 
     void Update()
     {
@@ -25,11 +33,11 @@ public class Weapon : MonoBehaviour
     {
         _canShoot = false;
 
-        if (_ammoSlot.GetCurrentAmount() > 0)
+        if (_ammoSlot.GetCurrentAmount(_ammoType) > 0)
         {
             PlayMuzzleFlash();
             ProcessRaycast();
-            _ammoSlot.ReduceCurrentAmount();
+            _ammoSlot.ReduceCurrentAmount(_ammoType);
         }
 
         yield return new WaitForSeconds(_shotDelay);

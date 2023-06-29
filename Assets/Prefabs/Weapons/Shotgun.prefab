@@ -352,13 +352,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 383f78ad70a58f9468f4b03ee24643a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _FPCamera: {fileID: 0}
   _range: 2
   _damage: 100
   _shotDelay: 1
+  _FPCamera: {fileID: 0}
   _muzzleFlash: {fileID: 5828259666842273700}
   _hitImpact: {fileID: 7000490191134810834, guid: 3662068e632b63d41bc6095e1382a6c2, type: 3}
   _ammoSlot: {fileID: 0}
+  _ammoType: 1
 --- !u!1 &2337074158997199752
 GameObject:
   m_ObjectHideFlags: 0
