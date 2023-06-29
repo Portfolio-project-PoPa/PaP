@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -9,6 +6,7 @@ public class EnemyAI : MonoBehaviour
 {
     [SerializeField] private Transform _target;
     [SerializeField] private float _chaseRange;
+    [SerializeField] private float _damage;
 
     private NavMeshAgent _agent;
     private float _distanceToTarget = Mathf.Infinity;
@@ -45,9 +43,15 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    public void OnDamageTaken()
+    {
+        _isProvoked = true;
+    }
+
     private void AttackTarget()
     {
-        Debug.Log("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+        if (_target.TryGetComponent(out PlayerHealth playerHealth))
+            playerHealth.TakeDamage(_damage);
     }
 
     private void ChaseTarget()

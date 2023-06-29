@@ -182,6 +182,10 @@ GameObject:
   - component: {fileID: 13600000}
   - component: {fileID: 11400004}
   - component: {fileID: 970320339}
+  - component: {fileID: 7832773511740529872}
+  - component: {fileID: 6131679398887590695}
+  - component: {fileID: 2045643330}
+  - component: {fileID: 2045643331}
   m_Layer: 0
   m_Name: RigidBodyFPSController
   m_TagString: Untagged
@@ -317,6 +321,61 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _mainCamera: {fileID: 2000000}
+--- !u!114 &7832773511740529872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 113f343cf98a55d45b3b6207185ad183, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _healthPoints: 100
+--- !u!114 &6131679398887590695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e27047871ce4a944397dcf6d28e3e008, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameOverCanvas: {fileID: 0}
+--- !u!114 &2045643330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a61f8eefbed726646ba1323750c4776e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _zoomInFOV: 40
+  _zoomOutFOV: 60
+  _zoomInSensitivity: 0.5
+  _zoomOutSensitivity: 2
+--- !u!114 &2045643331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e26e082292dd3b41b3b115614b20bb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ammoAmount: 10
 --- !u!1 &4321338867431036281
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,10 +463,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carbine
       objectReference: {fileID: 0}
+    - target: {fileID: 5828259666842273700, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 6323940286505593165, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
       propertyPath: _FPCamera
       value: 
       objectReference: {fileID: 2000000}
+    - target: {fileID: 6323940286505593165, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+      propertyPath: _ammoSlot
+      value: 
+      objectReference: {fileID: 2045643331}
     - target: {fileID: 6323940286505593165, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
       propertyPath: _hitEffect
       value: 
