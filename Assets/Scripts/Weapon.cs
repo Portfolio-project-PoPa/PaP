@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour
@@ -5,31 +6,39 @@ public class Weapon : MonoBehaviour
     [SerializeField] Camera _FPCamera;
     [SerializeField] float _range = 100f;
     [SerializeField] private float _damage = 20f;
-    [SerializeField] private ParticleSystem _muzzleEffect;
-    [SerializeField] private GameObject _hitEffect;
+    [SerializeField] private float _shotDelay = 0.5f;
+    [SerializeField] private ParticleSystem _muzzleFlash;
+    [SerializeField] private GameObject _hitImpact;
     [SerializeField] private Ammo _ammoSlot;
+
+    private bool _canShoot = true;
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetMouseButtonDown(0) && _canShoot)
         {
-            Shoot();
+            StartCoroutine(Shoot());
         }
     }
 
-    private void Shoot()
+    IEnumerator Shoot()
     {
+        _canShoot = false;
+
         if (_ammoSlot.GetCurrentAmount() > 0)
         {
-            ProcessShootingParticles();
+            PlayMuzzleFlash();
             ProcessRaycast();
             _ammoSlot.ReduceCurrentAmount();
         }
+
+        yield return new WaitForSeconds(_shotDelay);
+        _canShoot = true;
     }
 
-    private void ProcessShootingParticles()
+    private void PlayMuzzleFlash()
     {
-        _muzzleEffect.Play();
+        _muzzleFlash.Play();
     }
 
     private void ProcessRaycast()
@@ -49,7 +58,7 @@ public class Weapon : MonoBehaviour
 
     private void CreateHitImpact(RaycastHit hit)
     {
-        GameObject hitEffect = Instantiate(_hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
+        GameObject hitEffect = Instantiate(_hitImpact, hit.point, Quaternion.LookRotation(hit.normal));
         Destroy(hitEffect, 0.1f);
     }
 }

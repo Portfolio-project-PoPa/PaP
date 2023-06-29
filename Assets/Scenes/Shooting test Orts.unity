@@ -1275,10 +1275,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1600895187930735459, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3653280746705827762, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: _range
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3653280746705827762, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: _shotDelay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4980662073229559161, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6131679398887590695, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: _gameOverCanvas
       value: 
-      objectReference: {fileID: 748876984}
+      objectReference: {fileID: 748876980}
+    - target: {fileID: 7033029489592963496, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: _range
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7033029489592963496, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: _damage
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7033029489592963496, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: _shotDelay
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959173817352838203, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: _range
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
 --- !u!1001 &825348079
